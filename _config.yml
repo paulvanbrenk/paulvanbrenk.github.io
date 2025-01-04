@@ -12,6 +12,7 @@ theme: minima
 show_excerpts: true
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 minima:
   skin: auto
   social_links:
