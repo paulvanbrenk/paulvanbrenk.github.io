@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Advent of Code - 2025"
+date: 2025-01-07 10:00:00 -0500
+categories: technology
+---
+
+This is the second year I’ve participated in
+[Advent of Code](https://adventofcode.com/), and I cannot recommend this
+exercise enough. It's a great way to encounter interesting software engineering
+puzzles that are very different from my day-to-day work.
+
+For those unfamiliar with Advent of Code, here’s a description from the website:
+
+> Advent of Code is an
+> [Advent calendar](https://en.wikipedia.org/wiki/Advent_calendar) of small
+> programming puzzles for a variety of skill levels that can be solved in any
+> programming language you like.
+
+One thing that stood out to me this year was the number of problems involving
+grids; whether it was finding the shortest path, moving boxes around, or taking
+shortcuts on a racetrack.
+
+That said, most of the puzzles this year were pretty straightforward. It helped
+a lot that last year I learned about
+[Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and
+the effective memoization of recursive function calls.
+
+The most interesting puzzle for me was
+[Day 24](https://adventofcode.com/2024/day/24). It introduced me to "low-level"
+logic gates and reminded me that you don’t always need a closed-form solution.
+Sometimes you can figure out the answer by inspecting the output for a known
+input and applying some innovative logging.
+
+If you’re interested, here is the
+[Advent of Code GitHub repo](https://github.com/paulvanbrenk/advent-of-code)
+I’ve been using for my solutions over the past two years.
