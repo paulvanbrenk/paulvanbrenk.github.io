@@ -1,6 +1,21 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
+
+<h1>Latest Posts</h1>
+
+{% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="post-item">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        {% if post.excerpt %}
+          <p>{{ post.excerpt }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No posts yet.</p>
+{% endif %}
