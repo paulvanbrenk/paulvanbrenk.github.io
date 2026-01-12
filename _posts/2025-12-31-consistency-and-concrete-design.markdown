@@ -5,10 +5,10 @@ date: 2025-12-31 10:00:00 -0500
 categories: technology
 ---
 
-I read two posts from Sean Goedecke that clicked together for me. One is about
-shipping safely inside a large, established codebase. The other is about why
-useful software design is inseparable from working in the code. This is my
-summary, plus the habits I want to take from them.
+Large codebases reward different instincts than small ones. Sean Goedecke’s
+posts capture that shift: ship safely by following the grain of the system, and
+design by working with the concrete details, not abstract principles. Here’s the
+version of that philosophy I want to keep in front of me.
 
 The originals are:
 
@@ -18,8 +18,8 @@ The originals are:
 ## The Shared Thread
 
 Both posts push against the same instinct: "I can reason this out from first
-principles and then apply it to the codebase." In small projects that works.
-In mature systems, the concrete details (and the accumulated weird edge cases)
+principles and then apply it to the codebase." In small projects that works. In
+mature systems, the concrete details (and the accumulated weird edge cases)
 dominate.
 
 That leads to two related conclusions:
@@ -30,9 +30,9 @@ That leads to two related conclusions:
 
 ## Consistency Beats Clean Islands
 
-In [Mistakes engineers make in large established codebases][sg1], Sean calls
-out a "cardinal mistake": implementing a feature in the most
-reasonable way, while touching as little legacy code as possible.
+In [Mistakes engineers make in large established codebases][sg1], Sean calls out
+a "cardinal mistake": implementing a feature in the most reasonable way, while
+touching as little legacy code as possible.
 
 I've done this. It feels responsible: keep the blast radius small, keep the new
 code "nice", avoid the messy parts. The problem is that in large systems, the
@@ -45,16 +45,15 @@ usually means finding prior art and following it, even when it's awkward.
 unknown complexity (odd user types, operational tooling, exceptions for specific
 customers, historical data states, and so on).
 
-**Long-term payoff**: Consistency is what makes broad improvements possible.
-If every endpoint does auth differently, you can't fix auth "once". You have to
-fix it everywhere, which usually means it never gets fixed.
+**Long-term payoff**: Consistency is what makes broad improvements possible. If
+every endpoint does auth differently, you can't fix auth "once". You have to fix
+it everywhere, which usually means it never gets fixed.
 
 ## Design Conversations Should Be Concrete
 
 In [You can't design software you don't work on][sg2], Sean argues that only
-engineers who actively work in a system can do useful
-design for it, because real design discussions are about concrete details, not
-generic principles.
+engineers who actively work in a system can do useful design for it, because
+real design discussions are about concrete details, not generic principles.
 
 > Only the engineers who work on a large software system can meaningfully
 > participate in the design process.
@@ -76,28 +75,26 @@ activity done far away from implementation. Without contact with the codebase,
 it's easy to propose changes that are theoretically neat and practically
 unshippable.
 
-## Habits I Want To Steal
+## How I (Want To) Work In Large Codebases
 
 These are the practices I want to be more deliberate about when I'm working in
 large codebases.
 
 1. Start every change by finding prior art in the repo.
 2. Prefer existing helpers and patterns over "better" bespoke code.
-3. Learn the production footprint before I ship (hot paths, critical flows,
-   and what "breaking" actually looks like).
-4. Assume I can't test every state combination; plan for monitoring and slow
+3. Assume I can't test every state combination; plan for monitoring and slow
    rollouts instead.
-5. Be reluctant to add dependencies, because the maintenance cost will likely
+4. Be reluctant to add dependencies, because the maintenance cost will likely
    outlive my time on the team.
-6. Keep PRs small, and get domain experts to review the riskiest touch points
-   early.
-7. Treat design docs as concrete maps: link to the code, name the trade-offs,
+5. Keep PRs small, and get domain experts to review the riskiest touch points
+   early. (And use a stacking system, like e.g [Graphite][sg3]).
+6. Treat design docs as concrete maps: link to the code, name the trade-offs,
    and describe the migration path.
 
-## The Trade-Off I Want To Hold
+## Ship First, Improve Next
 
-Consistency can preserve bad patterns. But inconsistency makes it hard to
-change anything at scale. The move I like is:
+Consistency can preserve bad patterns. But inconsistency makes it hard to change
+anything at scale. The move I like is:
 
 - Follow the existing path to ship safely.
 - Then, if the pattern is truly harmful, improve it in a way that brings the
@@ -109,9 +106,9 @@ seen that compounds over time.
 
 ## Closing Thoughts
 
-Large codebases are where most of the value (and most jobs) are. The takeaway I
-want to remember is simple: good design is concrete, and good changes are
-consistent.
+In big systems, consistency keeps you safe and concreteness keeps you honest.
+That’s the work.
 
-[sg1]: <https://www.seangoedecke.com/large-established-codebases/>
-[sg2]: <https://www.seangoedecke.com/you-cant-design-software-you-dont-work-on/>
+[sg1]: https://www.seangoedecke.com/large-established-codebases/
+[sg2]: https://www.seangoedecke.com/you-cant-design-software-you-dont-work-on/
+[sg3]: https://www.graphite.com/
