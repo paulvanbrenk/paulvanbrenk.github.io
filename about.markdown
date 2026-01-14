@@ -1,21 +1,23 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
+
+<h1>{{ page.title }}</h1>
 
 Welcome to my new blog! I'm Paul van Brenk, a front-end leaning, full-stack
 developer with 20 years of experience. I've had the privilege of working with
 very talented developers at great companies like Meta, Microsoft, and Bloomberg.
 
-### What to Expect
+## What to Expect
 
 I will use this blog to document some of my personal projects and share
 interesting insights I come across. Don't expect tutorials; instead, you'll find
 high-level learnings and notes for myself on how to do things and why I made
 certain choices.
 
-### Current Tech Stack
+## Current Tech Stack
 
 My current tech stack for web-based projects includes:
 
