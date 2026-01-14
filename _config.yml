@@ -1,6 +1,6 @@
 title: Paul van Brenk - Blog 2.0
 email: 5273975+paulvanbrenk@users.noreply.github.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   New blog to write about personal projects and interesting things
   I come across.
 domain: blog.paulvanbrenk.com
@@ -8,16 +8,9 @@ url: "https://blog.paulvanbrenk.com"
 links_to_prev_next: true
 
 # Build settings
-theme: minima
-show_excerpts: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-minima:
-  skin: auto
-  social_links:
-    - { platform: github, user_url: "https://github.com/paulvanbrenk" }
-    - {
-        platform: linkedin,
-        user_url: "https://www.linkedin.com/in/paulvanbrenk",
-      }
+
+# Site settings
+show_excerpts: true
