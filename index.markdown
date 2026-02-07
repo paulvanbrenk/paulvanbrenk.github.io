@@ -11,7 +11,7 @@ layout: default
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
         {% if post.excerpt %}
-          <p>{{ post.excerpt }}</p>
+          <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
         {% endif %}
       </li>
     {% endfor %}
