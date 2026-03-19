@@ -1,0 +1,119 @@
+---
+layout: post
+title: "The Case for a 10/4/4 Schedule"
+date: 2026-03-19 10:00:00 -0500
+categories: technology
+---
+
+When people talk about shorter work weeks, the default version is usually a
+compressed schedule or a straight move to 32 hours. The version I find most
+interesting is simpler: work from 10am to 4pm, four days a week. That is six
+hours a day, 24 hours a week. This post is why that shape makes sense to me
+for knowledge work, and where I think it fits best.
+
+## Why Five Days and Eight Hours Feel Wasteful
+
+The standard five-day, eight-hour week made sense when output was closely tied
+to time on a factory floor. That is a much weaker fit for office and software
+work.
+
+Most people do not produce eight hours of focused work inside an eight-hour
+day. Some of that time is real work. Some of it is meetings, coordination,
+waiting, context switching, and the general overhead of being available.
+
+That does not mean people are lazy. It means knowledge work has a different
+shape. Attention is uneven. Deep work comes in blocks. A schedule built around
+physical presence is not automatically a good schedule for writing software,
+designing systems, or solving product problems.
+
+## What The Four-Day Week Gets Right
+
+The strongest argument for a four-day week is not that people work less. It is
+that they usually work with more intent.
+
+The public trials in the UK, Iceland, and a number of individual companies all
+point in roughly the same direction: when teams have less time, they cut busy
+work more aggressively. Meetings get shorter. Priorities get clearer.
+Productivity often stays flat, and well-being tends to improve.
+
+The UK pilot in 2022 is the most cited example: 61 companies, roughly 2,900
+employees, and outcomes that were directionally strong on retention, sick
+leave, and employee well-being. Iceland's earlier trials point the same way.
+So does the shorter experiment Microsoft Japan ran in 2019.
+
+That matches my intuition. When time becomes scarce, teams are forced to make
+better decisions about what actually matters.
+
+## Why 10am to 4pm
+
+A straight four-day, 32-hour week is already a meaningful improvement. I like
+a 10/4/4 version better because it also rethinks the shape of the workday,
+not just the number of days.
+
+Starting at 10am means mornings are yours. You can exercise, take your kids to
+school, read, work on a side project, or just ease into the day without an
+alarm dragging you out of bed at 6:30. Ending at 4pm means you still have a
+real evening. You are not just collapsing on the couch after dinner wondering
+where the day went.
+
+The six-hour window in between becomes your focused work time. No early
+morning meetings where half the team is still waking up. No late afternoon
+calls where everyone is running on fumes. Just the core of the day, when most
+people do their best thinking.
+
+I also like that it keeps a large shared overlap window. In most office jobs,
+10am to 4pm is enough time for collaboration, support, reviews, and meetings,
+without letting the day expand to fill every available hour.
+
+The key point is that this is not "do eight hours of work in six." It is
+"accept that most knowledge workers are not producing eight good hours anyway,
+then design around the part of the day that is usually most useful."
+
+## What You Get Back
+
+The part I like most about this schedule is what it gives back. Real mornings.
+Real evenings. A three-day weekend.
+
+Some of that time will turn into things that make people better at work. A
+backend engineer might pick up more frontend. A developer with evenings back
+might contribute to open source or write more. Someone with time to mentor or
+volunteer will often become a better communicator and teammate.
+
+But I do not think all of the reclaimed time needs a productivity story.
+Some of it can just be life: errands, exercise, reading, time with family,
+or just not being tired all the time. That still matters. In practice, people
+who feel less squeezed usually do better work.
+
+The three-day weekend matters here too. Two days off is often just enough to
+recover. Three gives you room to actually reset.
+
+## The Trade-Offs
+
+I would not present this as a universal answer.
+
+Some work is tied to physical coverage, fixed service windows, or shift-based
+operations. In those environments, a 10/4/4 schedule is harder to implement.
+Most of the strongest arguments for it come from knowledge work and office
+settings.
+
+Even in tech, the model only works if companies actually respect the
+boundaries. If 10am to 4pm quietly becomes 9am to 6pm with Slack messages
+before and after, you have not changed anything. You have just added
+dishonesty to the existing schedule.
+
+It also requires teams to get better at saying no. Fewer status meetings.
+Clearer priorities. Better async communication. More discipline about what
+truly needs a room full of people.
+
+So the real requirement is not just calendar design. It is operating
+discipline.
+
+## Closing Thoughts
+
+I like that four-day week forces sharper prioritization. I like the
+10/4/4 version even more because it also refocuses the workday itself.
+
+Six focused hours, four days a week, with real mornings and evenings still left
+for the rest of life. For knowledge work, that seems like a better trade than
+stretching attention across five long days and pretending all of those hours
+are equally useful.
