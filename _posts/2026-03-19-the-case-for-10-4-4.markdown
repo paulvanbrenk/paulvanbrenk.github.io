@@ -3,6 +3,7 @@ layout: post
 title: "The Case for a 10/4/4 Schedule"
 date: 2026-03-19 10:00:00 -0500
 categories: technology
+published: false
 ---
 
 When people talk about shorter work weeks, the default version is usually a
